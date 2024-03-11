@@ -1,0 +1,96 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* Global CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Root Styles */
+:root {
+    /* Colors */
+    --CLR-WHITE: hsl(0, 0%, 100%);
+    --CLR-L-GRAY: hsl(212, 45%, 89%);
+    --CLR-GRAYBLUE: hsl(220, 15%, 55%);
+    --CLR-DBLUE: hsl(218, 44%, 22%);
+
+    --SHADOW-CLR: rgba(0,0,0,0.49);
+
+    /* Fonts */
+    --FF: "Outfit", sans-serif;
+
+    --FS-15: 0.938em; /* 15px - Paragraph */
+    --FS-22: 1.375em; /* 22px - Heading */
+
+    --FW-400: 400;
+    --FW-700: 700;
+
+    /* Styles */
+    --BORDER-RADIUS: 1.5em;
+    --BOX-SHADOW: -1px 6px 16px -8px var(--SHADOW-CLR);
+}
+
+/* General Styles */
+body {
+    background-color: var(--CLR-L-GRAY);
+    font-family: var(--FF);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 20em;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    background-color: var(--CLR-WHITE);
+    border-radius: 0.5em;
+    box-shadow: var(--BOX-SHADOW);
+}
+
+.wrapper img {
+    width: 100%;
+    padding: 1.125em;
+    border-radius: var(--BORDER-RADIUS);
+}
+
+.text-container {
+    padding-bottom: 1.875em;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.head {
+    font-weight: var(--FW-700);
+    font-size: var(--FS-22);
+    text-align: center;
+    padding: 0 1.25em 0.625em;
+    color: var(--CLR-DBLUE);
+}
+
+.desc {
+    font-weight: var(--FW-400);
+    font-size: var(--FS-15);
+    text-align: center;
+    padding: 0 2.25em;
+    color: var(--CLR-GRAYBLUE);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    opacity: 30%;
+    padding-bottom: 0.75em;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
